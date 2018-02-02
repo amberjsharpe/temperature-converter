@@ -10,13 +10,13 @@
     font-size: 25px;
 }
 
-#clear-button {
+#clear-input {
     margin-left: 25px;
     background-color: yellow;
     border-radius: 25px;
 }
 
-#convert-button {
+#converter {
     margin-left: 25px;
     margin-top: 25px;
     width: 200px;

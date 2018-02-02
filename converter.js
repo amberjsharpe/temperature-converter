@@ -1,27 +1,32 @@
-// Delete text in input field
+// Clear the input field using clear-input button //
+function clearInput() {
+    document.getElementById("temp-input").value = "";
+  }
+  
+  document.getElementById("clear-input").addEventListener("click", clearInput);
 
-function eraseText() {
-  document.getElementById("clear-button").value = "";
-}
+// Submit Button //
 
-document.getElementById("clear-button").addEventListener("click", eraseText());
 
-function toCelsius () {
+function calculate() {
+    var button = document.getElementById("converter");
+    button.addEventListener("click", determineConverter);
+    var tempInput = document.getElementById("temp-input").value;
 
-}
+    function determineConverter (clickEvent) {
+        if (document.getElementById("to-celcius").checked) {
+            function toFahrenheit(tempInput) {
+                tempInput = parseFloat(tempInput);
+                document.getElementById("temp-output").innerHTML = (tempInput - 32) / 1.8;
+            }
+        } else if (document.getElementById("to-fahrenheit").checked) {
+            function toCelcius(tempInput) {
+                tempInput = parseFloat(tempInput);
+                document.getElementById("temp-output").innerHTML = (tempInput * 1.8) + 32;
+            }
+        }
+    }
 
-function toFahrenheit () {
-
-}
-
-// Get a reference to the button element in the DOM
-//var button = document.getElementById("converter");
-
-// This function should determine which conversion should
-// happen based on which radio button is selected.
-//function determineConverter (clickEvent) {
-  //console.log("event", clickEvent);
-//}
-
-// Assign a function to be executed when the button is clicked
-//button.addEventListener("click", determineConverter);
+}  
+  
+  

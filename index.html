@@ -11,18 +11,19 @@
 <body>
     <field>
         <h2 id="heading">Input Temperature:</h2>
-        <input id="temp-input" type="text"><button id="clear-button">Clear Input</button>
+        <input id="temp-input" type="text">
+        <button id="clear-input">Clear Input</button>
     </field>
 
     <div>
         <h3>Please select the scale that temperature should be converted to:</h3>
-        <input id="scale-celcius" type="radio" value="celcius">   
-        <label for="scale-celcius">Fahrenheit to Celcius</label>
-        <input id="scale-fahrenheit" type="radio" value="fahrenheit">   
-        <label for="scale-fahrenheit">Celcius to Fahrenheit</label>
+        <input id="to-celcius" type="radio">   
+        <label for="to-celcius">to Celcius</label>
+        <input id="to-fahrenheit" type="radio">   
+        <label for="to-fahrenheit">to Fahrenheit</label>
     </div>
 
-    <button id="convert-button">CONVERT</button>
+    <button id="converter">CONVERT</button>
 
     <div>
         <h2>Converted temperature:</h2>
